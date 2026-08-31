@@ -52,5 +52,6 @@ public class PositiveLoginTest {
         Assert.assertTrue(driver.getCurrentUrl().contains("/secure"));
         Assert.assertTrue(logoutButton.isDisplayed());
         System.out.println("Positive Login: PASSED");
+        Assert.assertEquals("Intentional PR failure", "PASS", "FAIL");
     }
 }
